@@ -2825,6 +2825,9 @@ function setupAutosave() {
 					AddIntellisense(Key, "Property", "Property for Drawing Library", Key);
 
 			}
+			window.getEditorValue = () => {
+ 				return window.editor.getValue();
+			};
 			load();
 			Refresh = function () {
 				var text = GetText();
@@ -2838,6 +2841,7 @@ function setupAutosave() {
 </body>
 
 </html>
+
 
 
 
